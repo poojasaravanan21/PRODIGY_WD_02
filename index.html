@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch and Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+            <h1>Current Time</h1>
+            <div id="currentTime" class="display">00:00:00</div>
+        </div>
+        <div class="stopwatch-calendar">
+            <div class="stopwatch">
+                <h1>Stopwatch</h1>
+                <div id="stopwatchTime" class="display">00:00:00</div>
+                <div class="controls">
+                    <button id="startStopBtn">Start</button>
+                    <button id="resetBtn">Reset</button>
+                    <button id="lapBtn">Lap</button>
+                </div>
+                <div class="laps">
+                    <h2>Laps</h2>
+                    <ul id="lapsList"></ul>
+                </div>
+            </div>
+            <div class="calendar">
+                <h1>Calendar</h1>
+                <div class="calendar-header">
+                    <button id="prevMonthBtn">&lt;</button>
+                    <div id="calendarMonthYear"></div>
+                    <button id="nextMonthBtn">&gt;</button>
+                </div>
+                <div id="calendar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

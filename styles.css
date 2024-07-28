@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #da88fa, #feb47b);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.clock, .stopwatch, .calendar {
+    margin-bottom: 20px;
+}
+
+.stopwatch-calendar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.display {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.controls button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps h2 {
+    font-size: 24px;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps ul li {
+    padding: 5px 0;
+}
+
+.calendar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#calendarMonthYear {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-size: 16px;
+}
+
+#calendar div {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+#calendar div.sunday {
+    color: blue;
+}
+
